@@ -57,7 +57,6 @@ function App() {
         window.location.reload()
     }
 
-
     function limpaLocalStorage() {
         localStorage.clear()
         dadosApagadosNotify()
