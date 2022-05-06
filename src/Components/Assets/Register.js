@@ -10,6 +10,7 @@ function App() {
 
     const notify = () => toast("Cadastro concluído com sucesso!");
     const errorNotify = () => toast("Preencha todos os campos!");
+    const correctCamp = () => toast('Preencha todos os campos corretamente!')
     const dadosApagadosNotify = () => toast("Os dados foram apagados!");
     const [pessoas, setPessoas] = useState([])
     const [funcionario, setFuncionario] = useState({})
@@ -33,20 +34,30 @@ function App() {
             _.isEmpty(funcionario?.dataDeNascimento) ||
             _.isEmpty(funcionario?.cargo) ||
             _.isEmpty(funcionario?.salario)) {
+
             errorNotify()
+
+
         } else {
-            localStorage.setItem("pessoa", JSON.stringify(aux))
-            setPessoas(aux)
-            notify()
-            setFuncionario({
-                name: '',
-                email: '',
-                cpf: '',
-                dataDeNascimento: '',
-                phone: '',
-                salario: '',
-                cargo: ''
-            })
+
+            if (funcionario.cpf.length < 14 ||
+                funcionario.phone.length < 15 ||
+                funcionario.dataDeNascimento.length < 10) {
+                correctCamp()
+            } else {
+                localStorage.setItem("pessoa", JSON.stringify(aux))
+                setPessoas(aux)
+                notify()
+                setFuncionario({
+                    name: '',
+                    email: '',
+                    cpf: '',
+                    dataDeNascimento: '',
+                    phone: '',
+                    salario: '',
+                    cargo: ''
+                })
+            }
         }
     }
 
@@ -78,6 +89,7 @@ function App() {
         arrPessoa.splice(item, 1)
         localStorage.setItem("pessoa", JSON.stringify(arrPessoa))
     }
+
     console.log(funcionario);
     console.log(pessoas)
 
@@ -187,63 +199,85 @@ function App() {
                         <div className='tabela'>
                             <div>
 
+                                <div className="rowList">
+                                    <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
+                                        <div>
+                                            <span>Nome</span>
+                                        </div>
+                                    </div>
+                                    <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
+                                        <div>
+                                            <span>Cpf</span>
+                                        </div>
+                                    </div>
+                                    <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
+                                        <div>
+                                            <span>Email</span>
+                                        </div>
+                                    </div>
+                                    <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
+                                        <div>
+                                            <span>Data de nascimento</span>
+                                        </div>
+                                    </div>
+                                    <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
+                                        <div>
+                                            <span>Telefone</span>
+                                        </div>
+                                    </div>
+                                    <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
+                                        <div>
+                                            <span>Cargo</span>
+                                        </div>
+                                    </div>
+                                    <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
+                                        <div>
+                                            <span>Salários</span>
+                                        </div>
+                                    </div>
+                                    <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
+                                        <div>
+                                            <span>Ações</span>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 {pessoas?.map((item, index) =>
                                     <div key={index} className="rowList">
 
 
-                                        <div style={{width: "12.5%"}} className='classificaoces'>
-                                            <div>
-                                                <span>Nome</span>
-                                            </div>
+                                        <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
                                             <div>{item.name}</div>
                                         </div>
 
-                                        <div style={{width: "12.5%"}} className='classificaoces'>
-                                            <div>
-                                                <span>Cpf</span>
-                                            </div>
+                                        <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
                                             <div>{item.cpf}</div>
                                         </div>
 
-                                        <div style={{width: "12.5%"}} className='classificaoces'>
-                                            <div>
-                                                <span>Email</span>
-                                            </div>
+                                        <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
                                             <div>{item.email}</div>
                                         </div>
 
-                                        <div style={{width: "12.5%"}} className='classificaoces'>
-                                            <div>
-                                                <span>Data de Nascimento</span>
-                                            </div>
+                                        <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
                                             <div>{item.dataDeNascimento}</div>
 
                                         </div>
 
-                                        <div style={{width: "12.5%"}} className='classificaoces'>
-                                            <div>
-                                                <span>Telefone</span>
-                                            </div>
+                                        <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
                                             <div>{item.phone}</div>
                                         </div>
 
-                                        <div style={{width: "12.5%"}} className='classificaoces'>
-                                            <div>
-                                                <span>Cargo</span>
-                                            </div>
+                                        <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
                                             <div>{item.cargo}</div>
                                         </div>
-                                        <div style={{width: "12.5%"}} className='classificaoces'>
-                                            <div>
-                                                <span>Salário</span>
-                                            </div>
+                                        <div style={{width: "12.5%", flex: 1}} className='classificaoces'>
                                             <div>{item.salario}</div>
                                         </div>
 
-                                        <div style={{width: "5%"}} className="imagem">
+                                        <div style={{width: "5%", flex: 1}} className="imagem">
                                             <div>
                                                 <img className='imagens' src={image1} alt={"imagem"}
-                                                onClick={() => alterarDados(item)}/>
+                                                     onClick={() => alterarDados(item)}/>
                                             </div>
                                             <div>
                                                 <img className='imagens' src={image2} alt={"imagem"}
@@ -260,4 +294,5 @@ function App() {
         </div>
     );
 }
+
 export default App;

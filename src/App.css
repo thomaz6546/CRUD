@@ -46,22 +46,22 @@ body {
 
 .classificaoces {
     font-family: 'Quicksand', sans-serif;
-    margin: 5px;
+    margin: 0px;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
 .classificaoces div {
     font-family: 'Quicksand', sans-serif;
-    margin: 5px;
+    margin: 0px;
     text-overflow: ellipsis;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .rowList {
-    background-color: #E0FFFF;
     margin: 5px;
-    border: 1px solid black;
     border-radius: 10px;
 }
 
@@ -73,6 +73,7 @@ body {
     display: block;
     width: 100%;
 }
+
 .imagens img:hover {
     display: block;
     width: 100%;
@@ -83,15 +84,10 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
-    margin-right: 1%;
+
 }
 
-.rowList:hover {
-    margin: 5px;
-    border: 1px solid black;
-    border-radius: 10px;
-    /*-webkit-transition: .2s ease-in;*/
-}
+
 
 li {
     list-style-type: none;
