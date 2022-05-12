@@ -1,3 +1,4 @@
+
 export const phoneMask = (value) => {
     let aux = value
     let a = aux.replace(/[^0-9]/g, '');
@@ -161,3 +162,11 @@ export const dateMask = (value) => {
     return a
 
 }
+
+export const maskBRL = value => {
+    return value
+        .replace(/\D/g, "")
+        .replace(/(\d)(\d{2})$/ , "$1,$2")
+        .replace(/(?=(\d{3})+(\D))\B/g, "." );
+};
+

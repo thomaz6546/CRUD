@@ -1,6 +1,5 @@
-import './App.css';
+import './Styles/App.css';
 import Documents from "./Components/Assets/Register";
-
 
 function App() {
     return (
