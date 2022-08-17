@@ -170,7 +170,9 @@ function App() {
                             <div>
                                 <input className="inputText" type="text" placeholder="Salário"
                                        value={funcionario?.salario}
-                                       onChange={(e) => {setFuncionario({...funcionario, salario:`R$ ${maskBRL(e.target.value)}` })}}
+                                       onChange={(e) => {
+                                           setFuncionario({...funcionario, salario: `R$ ${maskBRL(e.target.value)}`})
+                                       }}
                                 />
                             </div>
 
@@ -195,10 +197,11 @@ function App() {
                                 <div>
                                     <input id='botaoApagar' type="button" className="delete" value="Limpar"
                                            onClick={limpaLocalStorage}/>
-
                                 </div>
                             </div>
                         </div>
+
+
                         {botaoClicado ?
                             <div className='tabela'>
                                 <div>
@@ -314,8 +317,19 @@ function App() {
                             }
                         </div>
                     </div>
-
                 </div>
+                <div className={botaoClicado ? "filterNone" : "filter"}>
+                    <div className="tituloRgstr">
+                        <span className="tituloDivRgstr">Filtro</span>
+                    </div>
+
+                    <div>
+                        <div className="campoDePesquisa">
+                            <input type="text" className="campoFiltrado" placeholder="Digite o nome de um funcionário"/>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     );

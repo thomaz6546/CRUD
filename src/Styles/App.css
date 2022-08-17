@@ -27,7 +27,7 @@ body {
     background-color: #F0F8FF;
     border: 1px solid black;
     border-radius: 20px;
-    -webkit-transition: .4s ;
+    -webkit-transition: .4s;
 }
 
 .recordWhenPressed {
@@ -124,17 +124,21 @@ li {
     display: flex;
     justify-content: center;
 }
+
 .botaoMostraTabela {
     display: flex;
     justify-content: center;
 }
+
 .inputs {
     padding: 5px;
 }
+
 .inputsRecordWhenNotpressed {
     display: none;
 
 }
+
 .inputText {
     padding-left: 10px;
     width: 100%;
@@ -224,6 +228,7 @@ input[type="number"]::-webkit-inner-spin-button {
     justify-content: center;
 
 }
+
 .funcionariosCadastrados {
     margin: 5px;
     padding: 5px;
@@ -231,36 +236,47 @@ input[type="number"]::-webkit-inner-spin-button {
     border: 1px solid black;
     border-radius: 10px;
 }
+
 .paiRegistro {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.inputsRecordWhenPressed {
-
+.campoDePesquisa {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/*RESPONSIVIDADE*/
+.campoFiltrado {
+    padding: 10px;
+    padding-left: 10px;
+    margin: 10px;
+    width: 80%;
+    height: 25px;
+    margin-bottom: 10px;
+    background-color: #E0FFFF;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+}
 
-/*@media (max-width: 600px) {*/
-/*    .inputText {*/
-/*        padding-left: 10px;*/
-/*        width: 90%;*/
-/*        height: 25px;*/
-/*        margin: 1%;*/
-/*        background-color: #E0FFFF;*/
-/*        border: 1px solid black;*/
-/*        border-radius: 20px;*/
-/*    }*/
+.campoFiltrado::placeholder {
+    color: black;
+    padding-left: 10px;
+}
 
-/*    .registro {*/
-/*        margin: 1%;*/
-/*        width: 95%;*/
-/*        height: 400px;*/
-/*        background-color: #F0F8FF;*/
-/*        border: 1px solid black;*/
-/*        border-radius: 20px;*/
-/*        align-items: center;*/
-/*    }*/
-/*}*/
+.filter {
+    margin: 2%;
+    width: 30%;
+    height: 530px;
+    background-color: #F0F8FF;
+    border: 1px solid black;
+    border-radius: 20px;
+    -webkit-transition: .4s;
+}
+.filterNone {
+    display: none;
+}

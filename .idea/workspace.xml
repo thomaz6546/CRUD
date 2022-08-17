@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c0970b6-fe54-4d29-b588-4d82eace29f0" name="Default Changelist" comment="projeto finalizado">
+    <list default="true" id="8c0970b6-fe54-4d29-b588-4d82eace29f0" name="Default Changelist" comment="tela interativa">
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Assets/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Assets/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Functions/Masks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Functions/Masks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles/App.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -40,12 +40,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -53,6 +55,7 @@
       <recent name="$PROJECT_DIR$/src/Images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Styles" />
       <recent name="$PROJECT_DIR$/src/Components" />
     </key>
   </component>
@@ -73,7 +76,35 @@
       <workItem from="1651681229915" duration="4834000" />
       <workItem from="1651765176329" duration="3205000" />
       <workItem from="1651853573327" duration="189000" />
-      <workItem from="1651855345147" duration="6005000" />
+      <workItem from="1651855345147" duration="6394000" />
+      <workItem from="1652111713142" duration="7886000" />
+      <workItem from="1652201550723" duration="10637000" />
+      <workItem from="1652287525929" duration="4613000" />
+      <workItem from="1652375694582" duration="1535000" />
+      <workItem from="1652383064757" duration="377000" />
+      <workItem from="1652386058542" duration="643000" />
+      <workItem from="1652458816452" duration="443000" />
+      <workItem from="1652459715174" duration="2419000" />
+      <workItem from="1652566760186" duration="468000" />
+      <workItem from="1652574623634" duration="123000" />
+      <workItem from="1652702163250" duration="236000" />
+      <workItem from="1652711019772" duration="418000" />
+      <workItem from="1652717660547" duration="860000" />
+      <workItem from="1652805313542" duration="251000" />
+      <workItem from="1652805594955" duration="2608000" />
+      <workItem from="1652817188907" duration="852000" />
+      <workItem from="1652958881770" duration="483000" />
+      <workItem from="1652977525726" duration="266000" />
+      <workItem from="1652989644489" duration="573000" />
+      <workItem from="1653063454845" duration="706000" />
+      <workItem from="1653323758517" duration="517000" />
+      <workItem from="1653413276490" duration="1155000" />
+      <workItem from="1654538025257" duration="601000" />
+      <workItem from="1654628754154" duration="292000" />
+      <workItem from="1654893422586" duration="1119000" />
+      <workItem from="1655120317725" duration="713000" />
+      <workItem from="1655222174924" duration="1751000" />
+      <workItem from="1656963548032" duration="504000" />
     </task>
     <task id="LOCAL-00001" summary="projeto finalizado">
       <created>1651858927922</created>
@@ -89,7 +120,28 @@
       <option name="project" value="LOCAL" />
       <updated>1651860302243</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="alteraçoes de mascara">
+      <created>1651870683327</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651870683327</updated>
+    </task>
+    <task id="LOCAL-00004" summary="alteraçoes de mascara">
+      <created>1651870707041</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651870707041</updated>
+    </task>
+    <task id="LOCAL-00005" summary="tela interativa">
+      <created>1652377208457</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652377208457</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +161,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="projeto finalizado" />
-    <option name="LAST_COMMIT_MESSAGE" value="projeto finalizado" />
+    <MESSAGE value="alteraçoes de mascara" />
+    <MESSAGE value="tela interativa" />
+    <option name="LAST_COMMIT_MESSAGE" value="tela interativa" />
   </component>
 </project>
